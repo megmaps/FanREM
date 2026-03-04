@@ -1,6 +1,6 @@
 # FanREM
 
-**FanREM** is a Python package for generating **Fan-Relative Elevation Models (FREM)** from a digital elevation model (DEM) and associated GIS data (fan apex, channel centerline, fan boundary, roads). The package automates building synthetic fans, sampling centerline elevations, interpolating the synthetic fan onto the DEM grid, and computing FREM outputs.
+**FanREM** is a Python package for generating **Fan-Relative Elevation Models (FREM)** from a digital elevation model (DEM) and associated GIS data (fan apex, channel centerline, fan boundary, roads).
 
 ---
 
