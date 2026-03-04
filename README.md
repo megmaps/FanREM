@@ -37,12 +37,17 @@ create_frem(
     out_frem="path/to/output_FREM.tif"
 )
 ```
+The package produces two outputs: the synthetic raster and the FREM (both as tif. files). 
 
 ## Troubleshooting
 
 No FREM output or errors reading files: Check that all input files exist and are in a compatible CRS.
 
 Incorrect fan alignment: Verify that apex, centerline, and fan boundary shapefiles correspond to the same DEM.
+
+## Funding
+This package was developed as part of my MASc in 2026. This research was supported by the Natural Sciences and Engineering Research Council of Canada (NSERC) under CGS-M. Thank you for those who provided feedback along the way!
+
 
 ## Contributing / Issues
 
