@@ -9,7 +9,7 @@
 Clone the repository and install in editable mode:
 
 ```bash
-git clone https://github.com/YourUsername/fanrem.git
+git clone https://github.com/megmaps/fanrem.git
 cd fanrem
 python -m pip install -e .
 ```
