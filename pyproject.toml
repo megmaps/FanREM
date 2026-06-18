@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fanrem"
+version = "0.1.0"
+description = "Fan-Relative Elevation Model (FREM) tool"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "geopandas",
+    "rasterio",
+    "shapely",
+    "scipy",
+    "matplotlib"
+]
+
+[tool.setuptools]
+packages = ["fanrem"]
