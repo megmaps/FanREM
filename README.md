@@ -13,7 +13,7 @@ git clone https://github.com/megmaps/FanREM.git
 cd FanREM
 ```
 
-This installs the package in editable mode. 
+Install the package in editable mode: 
 ```bash
 python -m pip install -e .
 ```
@@ -21,8 +21,10 @@ python -m pip install -e .
 This requires Python ≥ 3.10 and a valid ```pyproject.toml``` file in the repository root.
 
 ## Usage
-```markdown
-The package is imported as `fanrem`:
+After installation, the apckage is imported as:
+
+```python
+from fanrem import create_frem
 ```
 
 Once installed, use the package like this:
