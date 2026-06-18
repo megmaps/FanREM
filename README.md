@@ -6,22 +6,24 @@
 
 ## Installation
 
-Clone the repository and install in editable mode:
+Clone the repository:
 
 ```bash
-git clone https://github.com/megmaps/fanrem.git
-cd fanrem
+git clone https://github.com/megmaps/FanREM.git
+cd FanREM
+```
+
+This installs the package in editable mode. 
+```bash
 python -m pip install -e .
 ```
 
-This installs the package in editable mode, meaning any changes to the code will be immediately reflected without reinstalling.
-
-Make sure you have the required dependencies installed:
-```bash
-python -m pip install numpy geopandas rasterio shapely scipy matplotlib
-```
+This requires Python ≥ 3.10 and a valid ```bash pyproject.toml``` file in the repository root.
 
 ## Usage
+```markdown
+The package is imported as `fanrem`:
+```
 
 Once installed, use the package like this:
 ```bash
@@ -38,6 +40,12 @@ create_frem(
 )
 ```
 The package produces two outputs: the synthetic raster and the FREM (both as tif. files). 
+
+## Requirements
+
+If installation fails, install dependencies manually:
+
+```bash pip install numpy geopandas rasterio shapely scipy matplotlib```
 
 ## Troubleshooting
 
