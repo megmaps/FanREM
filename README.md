@@ -18,7 +18,7 @@ This installs the package in editable mode.
 python -m pip install -e .
 ```
 
-This requires Python ≥ 3.10 and a valid ```bash pyproject.toml``` file in the repository root.
+This requires Python ≥ 3.10 and a valid ```pyproject.toml``` file in the repository root.
 
 ## Usage
 ```markdown
@@ -45,7 +45,7 @@ The package produces two outputs: the synthetic raster and the FREM (both as tif
 
 If installation fails, install dependencies manually:
 
-```bash pip install numpy geopandas rasterio shapely scipy matplotlib```
+```pip install numpy geopandas rasterio shapely scipy matplotlib```
 
 ## Troubleshooting
 
