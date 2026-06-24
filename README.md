@@ -21,7 +21,7 @@ python -m pip install -e .
 This requires Python ≥ 3.10 and a valid ```pyproject.toml``` file in the repository root.
 
 ## Usage
-After installation, the apckage is imported as:
+After installation, the package is imported as:
 
 ```python
 from fanrem import create_frem
