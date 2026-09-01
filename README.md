@@ -55,6 +55,12 @@ No FREM output or errors reading files: Check that all input files exist and are
 
 Incorrect fan alignment: Verify that apex, centerline, and fan boundary shapefiles correspond to the same DEM.
 
+## Referencing 
+This tool can be cited at: 
+
+```Elkin, M. (2026). Field-based investigation and characterization of debris-flood processes in southwestern British Columbia (T). University of British Columbia. Retrieved from https://open.library.ubc.ca/collections/ubctheses/24/items/1.0455553```
+
+
 ## Funding
 This package was developed as part of my MASc in 2026. This research was supported by the Natural Sciences and Engineering Research Council of Canada (NSERC) under CGS-M. Thank you for those who provided feedback along the way!
 
