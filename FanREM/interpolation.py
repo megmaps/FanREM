@@ -15,7 +15,7 @@ def build_synthetic_fan(apex, fan_polygon, cl_x, cl_y, cl_elevs, n_theta):
         x_row = apex.x + r * np.cos(theta_row)
         y_row = apex.y + r * np.sin(theta_row)
 
-        mask = np.array([fan_polygon.contains(Point(x, y)) for x, y in zip(x_row, y_row)])
+        mask = np.array([fan_polygon.covers(Point(x, y)) for x, y in zip(x_row, y_row)])
 
         z_row = np.full_like(x_row, cl_elevs[i])
 
