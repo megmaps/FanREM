@@ -56,21 +56,15 @@ def sample_centerline(centerline, dem, transform, n_r, roads_gdf=None):
         for x, y in zip(cl_x_valid, cl_y_valid)
     ])
 
-    #fix 0 or null elevations and change them to the nearest known elevation along the channel
-    for i, z in enumerate(elevations):
+    #remove centerline points with missing or invalid elevations
+    valid_mask = (
+    np.isfinite(elevations) &
+    (elevations != 0.0) &
+    (elevations > -10000)
+)
 
-        if z == 0.0 or np.isnan(z):
-
-            valid_idxs = np.where(
-                (elevations != 0.0) & (~np.isnan(elevations))
-            )[0]
-
-            if len(valid_idxs) > 0:
-
-                closest_idx = valid_idxs[
-                    np.argmin(np.abs(valid_idxs - i))
-                ]
-
-                elevations[i] = elevations[closest_idx]
+    cl_x_valid = cl_x_valid[valid_mask]
+    cl_y_valid = cl_y_valid[valid_mask]
+    elevations = elevations[valid_mask]
 
     return cl_x_valid, cl_y_valid, elevations
